@@ -30,157 +30,18 @@ p {
 /****************************************************************/ 
 
 :root {
-    --color-yelow-background: #ffeeb1;
+    --color-sand-background: #F1EFED;
     --color-firstscene-gradient: linear-gradient(#bee5f2,#ffeeb1)
 
 }
 
 
 
-
-
-
-#begin {
-    width: 100%;
-    height: 1920px;
-}
-
-.back_begin {
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-}
-
-
-
 /****************************************************************/
-/*                         Eerste scene                         */
-/****************************************************************/
+/*                           HOMEPAGE                           */
+/****************************************************************/ 
 
-#firstscene {
-    background: var(--color-firstscene-gradient);
-}
-
-
-.back_first_scene {
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-    top: 0;
-
-    z-index: 0;
-}
-
-.dak {
-    position: fixed;
-    z-index: 2;
-}
-
-.palen {
-    position: fixed;
-
-    width: 63%;
-    height: auto;
-
-    z-index: 1;
-}
-
-.docent {
-
-    position: fixed;
-
-    width: 25%;
-    height: auto;
-    /* width: 290px;
-    height: 872px; */
-}
-
-.kinderen {
-    position: fixed;
-
-    width: 18%;
-    height: auto;
-}
-
-
-/****************************************************************/
-/*                         Tweede scene                         */
-/****************************************************************/
-
-#scenetwee {
-    background: var(--color-yelow-background);
-}
-
-
-.back_tweede_scene {
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-    top: 0;
-}
-
-.docent_2 {
-    position: fixed;
-
-    width: 25%;
-    height: auto;
-}
-
-.ambtenaar {
-    position: fixed;
-
-    width: 24%;
-    height: auto;
-}
-
-.praatwolk {
-    position: fixed;
-
-    width: 30%;
-    height: auto;
-}
-
-/****************************************************************/
-/*                          Derde scene                         */
-/****************************************************************/
-
-#scenedrie {
-    background: var(--color-yelow-background);
-}
-
-
-.back_derde_scene {
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-    top: 0;
-}
-
-.gas_omlijning {
-    position: fixed;
-}
-
-.praatwolk_scene3 {
-    position: fixed;
-
-    width: 50%;
-}
-
-
-/****************************************************************/
-/*                          Vierde scene                        */
-/****************************************************************/
-
-#scenevier {
-    background: var(--color-yelow-background);
-}
-
-
-.back_vierde_scene {
-    position: fixed;
-    top: 0;
+body {
+    /* background-color: var(--color-yelow-background); */
+    background-color: hotpink;
 }
