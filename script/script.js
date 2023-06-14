@@ -1,5 +1,52 @@
 
 
+var mainMenu = document.querySelector("header #nav");
+
+var menuButton = document.querySelector("header .burger");
+
+var buttonOverlay = document.querySelector("header .overlay");
+
+var body = document.querySelector("body");
+
+
+
+
+function toggleMenu() {
+
+menuButton.classList.toggle("clicked");
+buttonOverlay.classList.toggle("show");
+mainMenu.classList.toggle("show");
+body.classList.toggle("overflow");
+
+}
+
+menuButton.addEventListener("click", toggleMenu);
+buttonOverlay.addEventListener("click", toggleMenu);
+
+
+// function myFunction() {
+//     var element = document.getElementById("myDIV");
+//     element.classList.toggle("mystyle");
+//   }
+
+// $('.burger, .overlay').clicked(function() {
+//     $('.burger').toggleClass('clicked');
+//     $('.overlay').toggleClass('show');
+//     $('#nav').toggleClass('show');
+//     $('body').toggleClass('overflow');
+// })
+
+
+console.log("TEST")
+
+
+
+
+
+
+
+
+
 
 
 
@@ -31,11 +78,18 @@
 
 
 
+
+
+
+
+
 // let moon = document.getElementById("maan");
 // let stars = document.getElementById("sterren");
 // let voorBerg = document.getElementById("bergen_front");
 // let achterBerg = document.getElementById("bergen_back");
 // let text = document.getElementById("text");
+
+
 
 // window.addEventListener("scroll", function(){
 //     let value = window.scrollY;
