@@ -42,6 +42,95 @@ p {
 /****************************************************************/ 
 
 body {
-    /* background-color: var(--color-yelow-background); */
-    background-color: hotpink;
+    background-color: var(--color-yelow-background);
 }
+
+
+
+/************* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+    padding-top: 8px;
+    padding-right: 40%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 18px 0 rgba(0, 0, 0, 0.13);
+}
+
+header aside img {
+    width: auto;
+    height: 2.5em;
+
+    
+}
+
+header nav section ul {
+    list-style-type: none;
+
+    padding-right: 2em;
+
+    display: flex;
+}
+
+header nav section ul li {
+    padding-top: .7em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+
+    font-size: 11pt;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+header nav li.active {
+    color: var(--color-state-active);
+
+    /* font-weight: 600; */
+}
+
+header nav section ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+
+    
+}
+
+
+/* Neue Haas Grotesk Display Pro 45 Light
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Display Pro 46 Light Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: italic;
+Neue Haas Grotesk Display Pro 75 Bold
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Display Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: italic;
+Neue Haas Grotesk Text Pro 55 Roman
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+Neue Haas Grotesk Text Pro 56 Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: italic;
+Neue Haas Grotesk Text Pro 75 Bold
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: normal;
+Neue Haas Grotesk Text Pro 76 Bold Italic
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 700;
+font-style: italic; */
+
