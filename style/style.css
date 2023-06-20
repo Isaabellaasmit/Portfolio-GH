@@ -70,13 +70,14 @@ header {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 18px 0 rgba(0, 0, 0, 0.13);
     background-color: var(--color-sand-background);
+
+    position: sticky;
 }
 
 header aside img {
     width: auto;
     height: 2.5em;
 }
-
 
 
 
@@ -122,18 +123,18 @@ header nav section ul li a {
 
 /*************************************** MAIN *************************************/
 
-main section {
+main section.first{
   display: flex;
   justify-content: center;
 }
 
-main section article {
+main section:first-of-type article {
   padding-right: 8%;
   padding-left: 5%;
   padding-top: 9.8%;
 }
 
-main section article h1:first-of-type {
+main section:first-of-type article h1:first-of-type {
   /* font-family: "neue-haas-grotesk-display", sans-serif; */
   font-family: 'neue_haas_grotesk_displa25xTh';
   font-weight: 100;
@@ -144,7 +145,7 @@ main section article h1:first-of-type {
   color: var(--color-text-dark);
 }
 
-main section article h1:last-of-type {
+main section:first-of-type article h1:last-of-type {
   font-family: 'enowayregular';
   font-weight: 100;
   font-style: normal;
@@ -156,7 +157,7 @@ main section article h1:last-of-type {
   color: var(--color-text-medium);
 }
 
-main section article p {
+main section:first-of-type article p {
   font-family: 'neue_haas_grotesk_displa25xTh';
   font-weight: 100;
   font-style: normal;
@@ -164,17 +165,17 @@ main section article p {
   font-size: 1.3em;
 }
 
-main section article p:first-of-type {
+main section:first-of-type article p:first-of-type {
   margin-top: 0.2em;
   margin-bottom: 1em;
 }
 
-main section article aside {
+main section:first-of-type article aside {
   display: flex;
   flex-direction: column;
 }
 
-main section article aside a {
+main section:first-of-type article aside a {
   text-decoration: none;
   text-align: center;
   font-family: "neue-haas-grotesk-display", sans-serif;
@@ -195,15 +196,71 @@ main section article aside a {
 
 @media screen and (min-width: 1100px) {
 
-  main section img.home_img_desktop {
+  main section:first-of-type img.home_img_desktop {
     width: 41.2%;
     height: auto;
   }
   
-  main section img.home_img_mobile {
+  main section:first-of-type img.home_img_mobile {
     display: none;
   }
 
+}
+
+
+
+
+main section:nth-child(2) {
+  justify-content: start;
+  padding-left: 11%;
+  padding-right: 5.8%;
+  margin-top: 5em; 
+  padding-bottom: 5em;
+}
+
+main section:nth-child(2) h2 {
+  font-size: 3em;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-dark);
+
+  margin-bottom: 1.8em;
+}
+
+main section:nth-child(2) h2 span {
+  font-family: 'enowayregular';
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.05em;
+  letter-spacing: 0.03em;
+  color: var(--color-text-medium);
+}
+
+main section:nth-child(2) article {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+/* main section:nth-child(2) article section {
+  flex-direction: column;
+} */
+
+main section:nth-child(2) article section h2 {
+  width: 30%;
+}
+
+main section:nth-child(2) article section p {
+  margin-right: 3em;
+}
+
+main section:nth-child(2) article img {
+  width: 70%;
+  height: auto;
 }
 
 
@@ -253,9 +310,9 @@ header {
 
 .burger span, .burger span::before, .burger span::after {
     display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--color-darkblue-background);
+    width: 28px;
+    height: 1.8px;
+    background-color: var(--color-text-dark);
     outline: 1px solid transparent;
     -webkit-transition-property: background-color, -webkit-transform;
     -moz-transition-property: background-color, -moz-transform;
@@ -265,6 +322,22 @@ header {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3;
+}
+
+.burger span {
+  display: block;
+  width: 21px;
+  height: 1.8px;
+  background-color: var(--color-text-dark);
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3;
 }
 
 .burger span::before, .burger span::after {
