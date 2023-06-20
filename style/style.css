@@ -65,18 +65,30 @@ header {
     flex-direction: row-reverse;
     z-index: 5;
 
-    padding-top: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 5px;
     padding-right: 45%;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 18px 0 rgba(0, 0, 0, 0.13);
     background-color: var(--color-sand-background);
 
     position: sticky;
+    top: 0;
+}
+
+header nav {
+  margin-left: -11%;
 }
 
 header aside img {
     width: auto;
     height: 2.5em;
+
+    padding-left: 50%;
+
+    /* position: fixed;
+    left: auto;
+    right: auto; */
 }
 
 
@@ -85,7 +97,7 @@ header aside img {
 /********************** nav styling ***********************/
 
 header nav {
-  margin-right: 11%;
+  /* margin-right: 11%; */
 }
 
 header nav section ul {
@@ -123,15 +135,25 @@ header nav section ul li a {
 
 /*************************************** MAIN *************************************/
 
+/*************************** SECTION 1 **************************/
+
 main section.first{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  /* padding-left: 11%;
+  padding-bottom: 5em; */
+  /* margin-top: 3.1em;  */
+  margin-right: 8%;
+  margin-left: 8%;
 }
 
 main section:first-of-type article {
-  padding-right: 8%;
-  padding-left: 5%;
+  /* padding-right: 8%; */
+  /* padding-left: 5%; */
   padding-top: 9.8%;
+
+  max-width: 42%;
 }
 
 main section:first-of-type article h1:first-of-type {
@@ -140,7 +162,7 @@ main section:first-of-type article h1:first-of-type {
   font-weight: 100;
   font-style: normal;
   letter-spacing: 0.06em;
-  font-size: 4.25em;
+  font-size: 5vw;
 
   color: var(--color-text-dark);
 }
@@ -150,8 +172,7 @@ main section:first-of-type article h1:last-of-type {
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
-  /* font-size: 5.4em; */
-  font-size: 540%;
+  font-size: 6.37vw;
   letter-spacing: 0.02em;
 
   color: var(--color-text-medium);
@@ -163,6 +184,10 @@ main section:first-of-type article p {
   font-style: normal;
   letter-spacing: 0.06em;
   font-size: 1.3em;
+
+  /* width: 95%; */
+  margin-bottom: 0.6em;
+  /* padding-right: 10%; */
 }
 
 main section:first-of-type article p:first-of-type {
@@ -194,11 +219,14 @@ main section:first-of-type article aside a {
   border-radius: 0.9em;
 }
 
+
 @media screen and (min-width: 1100px) {
 
+  
   main section:first-of-type img.home_img_desktop {
-    width: 41.2%;
+    width: 58%;
     height: auto;
+    margin-right: -5.6em;
   }
   
   main section:first-of-type img.home_img_mobile {
@@ -206,6 +234,12 @@ main section:first-of-type article aside a {
   }
 
 }
+
+
+
+
+/*************************** SECTION 2 **************************/
+
 
 
 
@@ -245,24 +279,52 @@ main section:nth-child(2) article {
   display: flex;
   justify-content: start;
   align-items: start;
-
 }
 
-/* main section:nth-child(2) article section {
-  flex-direction: column;
-} */
+main section:nth-child(2) article section {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 main section:nth-child(2) article section h3 {
   width: 70%;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 800;
   font-style: normal;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   color: var(--color-text-dark);
 }
 
 main section:nth-child(2) article section p {
   margin-right: 3em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+
+  font-family: 'neue_haas_grotesk_displa25xTh';
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  font-size: 1em;
+}
+
+main section:nth-child(2) article section a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  font-size: 0.8em;
+
+  color: var(--color-text-light);
+
+  padding: 0.6em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 8em;
+  background-color: var(--color-button-blue);
+
+  border-radius: 1.5em;
 }
 
 main section:nth-child(2) article img {
@@ -270,6 +332,82 @@ main section:nth-child(2) article img {
   height: auto;
 }
 
+
+
+
+
+/*************************** SECTION 3 **************************/
+
+
+
+
+
+
+main section:nth-child(3) {
+  justify-content: start;
+  padding-left: 11%;
+  /* padding-bottom: 5em;
+  margin-top: 5em;  */
+  margin-right: 6%;
+  
+}
+
+main section:nth-child(3) article {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+main section:nth-child(3) article section {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+main section:nth-child(3) article section h3 {
+  width: 70%;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--color-text-dark);
+}
+
+main section:nth-child(3) article section p {
+  margin-right: 3em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+
+  font-family: 'neue_haas_grotesk_displa25xTh';
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  font-size: 1em;
+}
+
+main section:nth-child(3) article section a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  font-size: 0.8em;
+
+  color: var(--color-text-light);
+
+  padding: 0.6em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 8em;
+  background-color: var(--color-button-blue);
+
+  border-radius: 1.5em;
+}
+
+main section:nth-child(3) article img {
+  width: 67%;
+  height: auto;
+}
 
 
 
@@ -298,6 +436,7 @@ header {
     left: 20px;
     border-radius: 4px;
     z-index: 10;
+    /* padding-left: 21.3%; */
 }
 
 .burger span {
@@ -548,6 +687,14 @@ header {
     height: auto;
   }
   
+
+/*************************************** MAIN *************************************/
+
+/*************************** SECTION 1 **************************/
+
+
+
+
 }
 
 /****************************************************************/
