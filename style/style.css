@@ -213,9 +213,10 @@ main section:first-of-type article aside a {
 main section:nth-child(2) {
   justify-content: start;
   padding-left: 11%;
-  padding-right: 5.8%;
-  margin-top: 5em; 
   padding-bottom: 5em;
+  margin-top: 5em; 
+  margin-right: 6%;
+  
 }
 
 main section:nth-child(2) h2 {
@@ -244,14 +245,20 @@ main section:nth-child(2) article {
   display: flex;
   justify-content: start;
   align-items: start;
+
 }
 
 /* main section:nth-child(2) article section {
   flex-direction: column;
 } */
 
-main section:nth-child(2) article section h2 {
-  width: 30%;
+main section:nth-child(2) article section h3 {
+  width: 70%;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: var(--color-text-dark);
 }
 
 main section:nth-child(2) article section p {
@@ -259,7 +266,7 @@ main section:nth-child(2) article section p {
 }
 
 main section:nth-child(2) article img {
-  width: 70%;
+  width: 67%;
   height: auto;
 }
 
