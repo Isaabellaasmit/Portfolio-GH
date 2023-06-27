@@ -24,6 +24,18 @@ menuButton.addEventListener("click", toggleMenu);
 buttonOverlay.addEventListener("click", toggleMenu);
 
 
+
+
+import rolly from 'rolly.js';
+
+const r = rolly({
+  view: document.querySelector('.app'),
+  native: true,
+  // other options
+});
+r.init();
+
+
 // function myFunction() {
 //     var element = document.getElementById("myDIV");
 //     element.classList.toggle("mystyle");
