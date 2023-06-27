@@ -77,7 +77,15 @@ header {
 }
 
 header nav {
-  margin-left: -11%;
+  margin-left: -20%;
+}
+
+@media screen and (min-width: 1500px) {
+
+  header nav {
+    margin-left: -30%;
+  }
+
 }
 
 header aside img {
@@ -136,6 +144,10 @@ header nav section ul li a {
 /*************************************** MAIN *************************************/
 
 /*************************** SECTION 1 **************************/
+main {
+  margin-right: 8%;
+  margin-left: 8%;
+}
 
 main section.first{
   display: flex;
@@ -144,8 +156,6 @@ main section.first{
   /* padding-left: 11%;
   padding-bottom: 5em; */
   /* margin-top: 3.1em;  */
-  margin-right: 8%;
-  margin-left: 8%;
 }
 
 main section:first-of-type article {
@@ -193,6 +203,8 @@ main section:first-of-type article p {
 main section:first-of-type article p:first-of-type {
   margin-top: 0.2em;
   margin-bottom: 1em;
+
+  max-width: 34vw;
 }
 
 main section:first-of-type article aside {
@@ -224,13 +236,30 @@ main section:first-of-type article aside a {
 
   
   main section:first-of-type img.home_img_desktop {
-    width: 58%;
+    width: 50%;
     height: auto;
+    max-height: fit-content;
+    /* width: 49vw;
+    height: auto; */
     margin-right: -5.6em;
   }
   
   main section:first-of-type img.home_img_mobile {
     display: none;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+  
+  main section:first-of-type img.home_img_desktop {
+    /* width: 58%; */
+    height: 95vh;
+    width: auto;
+    /* width: 49vw;
+    height: auto; */
+    margin-right: 1.5%;
   }
 
 }
@@ -246,10 +275,10 @@ main section:first-of-type article aside a {
 
 main section:nth-child(2) {
   justify-content: start;
-  padding-left: 11%;
+  /* padding-left: 11%; */
   padding-bottom: 5em;
   margin-top: 5em; 
-  margin-right: 6%;
+  /* margin-right: 6%; */
   
 }
 
@@ -345,10 +374,10 @@ main section:nth-child(2) article img {
 
 main section:nth-child(3) {
   justify-content: start;
-  padding-left: 11%;
+  /* padding-left: 11%; */
   /* padding-bottom: 5em;
   margin-top: 5em;  */
-  margin-right: 6%;
+  /* margin-right: 6%; */
   
 }
 
