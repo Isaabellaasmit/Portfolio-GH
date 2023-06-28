@@ -1,5 +1,6 @@
 
 
+
 var mainMenu = document.querySelector("header #nav");
 
 var menuButton = document.querySelector("header .burger");
@@ -26,14 +27,36 @@ buttonOverlay.addEventListener("click", toggleMenu);
 
 
 
-import rolly from 'rolly.js';
+// import rolly from 'rolly.js'; 
+// import { parse } from 'node-html-parser';
+// parse = require('node-html-parser');
 
-const r = rolly({
-  view: document.querySelector('.app'),
-  native: true,
-  // other options
-});
-r.init();
+// const r = rolly({
+//     view: document.querySelector('.app'),
+//     native: true,
+//   });
+//   r.init();
+
+
+
+// const config = {
+//     view: document.querySelector('.app'),
+//     native: true,
+//   };
+  
+//   const r = window.rolly(config);
+//   r.init();
+
+
+
+// import rolly from 'rolly.js';
+
+// const r = rolly({
+//   view: document.querySelector('.app'),
+//   native: true,
+//   // other options
+// });
+// r.init();
 
 
 // function myFunction() {
@@ -52,7 +75,45 @@ r.init();
 console.log("TEST")
 
 
+// import 'atropos/css'
 
+// import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
+
+// import Atropos from 'atropos';
+
+// Initialize
+// const myAtropos = Atropos({
+//   el: '.my-atropos',
+//   // rest of parameters
+// });
+
+const myAtropos = Atropos({
+    el: '.my-atropos',
+    activeOffset: 40,
+    shadowScale: 1.05,
+    onEnter() {
+      console.log('Enter');
+    },
+    onLeave() {
+      console.log('Leave');
+    },
+    onRotate(x, y) {
+      console.log('Rotate', x, y);
+    }
+  });
+
+  setTimeout(() => {
+    // destroy it when needed
+    myAtropos.destroy();
+  }, 10000)
+
+
+
+
+// const myAtropos = Atropos({
+//   el: '.my-atropos',
+//   // rest of parameters
+// });
 
 
 

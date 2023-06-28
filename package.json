@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "atropos": "^2.0.1",
     "d3": "^7.6.1",
     "intersection-observer": "^0.12.2",
+    "lax.js": "^2.0.3",
     "rolly.js": "^0.4.0",
     "scrollama": "^3.2.0",
     "scrollmagic": "^2.0.8",
-    "skrollr": "^0.6.26"
+    "skrollr": "^0.6.26",
+    "ukiyojs": "^4.0.9"
   }
 }
