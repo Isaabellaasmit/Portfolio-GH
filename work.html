@@ -15,32 +15,48 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.0/css/style.css">
     <link rel="stylesheet" href="node_modules/atropos/atropos.css" />
-</head>
+
+    <!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet"/>
+</head> -->
 <body>
-    
-<header>
+    <!-- <video class="video-js vjs-theme-city" ...></video> -->
+<header
+    data-0="box-shadow: none; background-color: transparent;"
+    data-970="background-color: var(--color-sand-background); box-shadow: var(--shadow)"
+        >
 
     <aside>
-        <a href="index.html"><img src="images/Logo_PortIsa.svg" alt="Logo Isabella Smit Portfolio"></a>
+        <!-- <a href="index.html"><img src="images/Logo_PortIsa.svg" alt="Logo Isabella Smit Portfolio"></a> -->
+        <svg class="logosvg" viewBox="0 0 142.63 150.88"
+        data-0="fill: var(--color-white);"
+        data-970="fill: var(--color-logo-blue)">
+            <path class="logo" d="m97.95,13.84c-1.37,2.91-2.4,4.62-6.85,4.62-6.68,0-11.99-7.02-26.89-7.02-20.9,0-37.34,13.02-37.34,30.66,0,14.23,6.96,22.2,22.21,30.12v32.79c0,1.79-1.45,3.24-3.24,3.24h-5.44v.86h33.62v-.86h-5.26c-1.79,0-3.24-1.45-3.24-3.24l-.17-45.34c-22.79-9.12-27.01-17.48-27.01-26.64,0-10.62,8.22-20.72,25.86-20.72s29.12,12.5,33.91,31.69h.69V13.84h-.86Z"/>
+            <path class="logo" d="m91.98,73.55v-19.25c0-1.78,1.45-3.23,3.23-3.23h5.24v-.85h-33.53v.85h5.41c1.78,0,3.23,1.45,3.23,3.23v11.79s0,0-.01,0v20.21c16.26,6.97,27.32,12.26,27.32,26.53,0,16.83-12.02,25.75-30.73,25.75-24.55,0-36.74-19.23-41.38-38.46h-.86v38.29h.86c1.2-2.92,3.26-6.18,7.73-6.18,7.9,0,19.4,7.21,33.65,7.21,27.13,0,43.61-14.08,43.61-34.34,0-12.63-4.75-21.59-23.77-31.55Z"/>
+          </svg>
     </aside>
 
     <nav>
-        <div class="burger">
+        <div class="burger"
+        data-0="background-color: var(--color-white); opacity: 0.5;"
+        data-970="background-color: transparent">
             <span></span>
         </div>
 
         <section id="nav">
-            <ul class="main">
+            <ul class="main"
+            data-0="color: var(--color-white);"
+            data-970="color: var(--color-text-dark)">
                 <li><a href="index.html">Home</a></li>
                 <li class="active">Work</li>
-                <li><a href="#0">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#0">Contact</a></li>
             </ul>
         </section>
     </nav>
 
     <div class="overlay"></div>
-
 
 </header>
 
@@ -49,8 +65,11 @@
 
 
 <main class="work">
+
+    <img class="headerbeeld" src="images/work/Header_Work.jpg" alt="Headerbeeld met mijn werk">
+
     <article>
-        <img src="images/Placeholder_2.png" alt="..."
+        <img src="images/work/odf_header.jpg" alt="beeld odf fiberboost pagina"
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
@@ -68,7 +87,7 @@
     </article>
 
     <article>
-        <img src="images/Placeholder_2.png" alt="..."
+        <img src="images/work/rivenruby_header.jpg" alt="beeld Riven Ruby pagina"
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
