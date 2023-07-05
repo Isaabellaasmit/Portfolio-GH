@@ -601,7 +601,9 @@ footer p {
 header {
     padding-right: 50%;
     padding-left: 50%;
-    z-index: 5;
+    z-index: 20;
+    position: sticky;
+    top: 0;
 }
     
 
@@ -1063,13 +1065,6 @@ section.about video {
   display: block;
 }
 
-/* @media screen and (min-width: 1100px) {
-
-  section.about video{
-    display: block;
-  }
-}   */
-
 section.about img {
   display: none;
 }
@@ -1143,7 +1138,7 @@ main.about section:first-of-type aside h2 {
   padding-top: 0em;
 }
 
-main.about section:first-of-type aside h2 br {
+main.about section aside h2 br {
   display: none;
 }
 
@@ -1394,7 +1389,7 @@ main.about section:nth-child(7) article p:first-of-type {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
   section.about video {
     display: none;
@@ -1414,7 +1409,6 @@ main.about section:nth-child(7) article p:first-of-type {
     color: var(--color-text-light);
 
     margin-bottom: 0.3em;
-    position: static;
   }
   
   section.about aside p {
@@ -1447,7 +1441,7 @@ main.about section:nth-child(7) article p:first-of-type {
   }
 
   main.about section aside:first-of-type h2 br {
-    display: inline;
+    display: block;
   }
 
   main.about section aside:first-of-type h3 {
@@ -1476,8 +1470,8 @@ main.about section:nth-child(7) article p:first-of-type {
     padding-left: 0.5em;
     min-width: 5.8em;
 
-    z-index: 10;
-    position: relative;
+    z-index: 8;
+    position: static;
   }
   
 
@@ -1487,7 +1481,7 @@ main.about section:nth-child(7) article p:first-of-type {
 
   main.about section.about_mobile {
     display: flex;
-    margin-top: -4.2em;
+    margin-top: -3em;
   }
 
   /* main.about section.about_mobile ul {
@@ -1496,13 +1490,13 @@ main.about section:nth-child(7) article p:first-of-type {
 
   main.about section.about_mobile ul li {
     line-height: 1.4em;
-    font-size: 3.2vw;
+    font-size: 4vw;
   }
 
 
   main.about section.about_mobile ul:first-child li:nth-last-child(odd) {
     /* background-color: hotpink; */
-    padding-bottom: 2em;
+    padding-bottom: 1.8em;
 
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 100;
@@ -1517,25 +1511,50 @@ main.about section:nth-child(7) article p:first-of-type {
   }
 
 
-  /* main.about section:nth-child(4), main.about section:nth-child(5) {
+  main.about section:nth-child(6) {
+    margin-top: 3.5em;
+  }
+
+
+
+  main.about section:nth-child(6) aside h3 {
+    top: 15%;
+  }
+
+  main.about section:nth-child(7) {
     display: flex;
-    justify-content: space-between;
-  
-    padding-right: 6vw;
-  } */
+    flex-direction: column;
+    margin-bottom: -3em;
+  }
 
-  /* main.about section:nth-child(4) ul li, main.about section:nth-child(5) ul li {
-    list-style-type: none;
-  
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: 0.06em;
-    line-height: 3.4em;
-    font-size: 1.4vw;
-    color: var(--color-text-dark);
-  } */
+  main.about section:nth-child(7) article {
+    margin-bottom: 3em;
+  }
 
+  main.about section:nth-child(7) article h4{
+    display: block;
+
+    font-size: 4.5vw;
+  }
+
+  main.about section:nth-child(7) article p{
+    display: block;
+    font-size: 4vw;
+    line-height: normal;
+    padding-bottom: 1em;
+  }
+
+  main.about section:nth-child(7) article p:first-of-type {
+    max-width: none;
+  }
+
+  main.about section:nth-child(7) article:nth-child(3) p:first-of-type br{
+    display: none;
+  }
+
+  footer p {
+    font-size: 2.7vw;
+  }
 
 }
 
