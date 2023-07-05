@@ -601,6 +601,7 @@ footer p {
 header {
     padding-right: 50%;
     padding-left: 50%;
+    z-index: 5;
 }
     
 
@@ -983,6 +984,7 @@ main.work img.headerbeeld {
   height: auto;
 
   margin-top: -6em;
+  z-index: 7;
 }
 
 main.work article {
@@ -1058,6 +1060,18 @@ section.about {
 section.about video {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+/* @media screen and (min-width: 1100px) {
+
+  section.about video{
+    display: block;
+  }
+}   */
+
+section.about img {
+  display: none;
 }
 
 section.about aside {
@@ -1129,6 +1143,10 @@ main.about section:first-of-type aside h2 {
   padding-top: 0em;
 }
 
+main.about section:first-of-type aside h2 br {
+  display: none;
+}
+
 main.about section:first-of-type aside h3 {
   position: absolute;
   top: 35%;
@@ -1149,6 +1167,10 @@ main.about section:first-of-type aside h3 {
 
 main.about section:nth-child(2) img {
   padding-right: 2em;
+  width: 11.3vw;
+  max-width: 7em;
+  min-width: 5em;
+  height: auto;
 }
 
 main.about section:nth-child(2) img:nth-child(6) {
@@ -1202,10 +1224,16 @@ main.about section:nth-child(3) aside h3 {
 }
 
 
+main.about section.about_desktop {
+  display: block;
+}
+
+main.about section.about_mobile {
+  display: none;
+}
 
 
-
-main.about section:nth-child(4) {
+main.about section:nth-child(4), main.about section:nth-child(5) {
   display: flex;
   justify-content: space-between;
 
@@ -1216,7 +1244,7 @@ main.about section:nth-child(4) ul {
   margin-right: 23vw;
 } */
 
-main.about section:nth-child(4) ul li {
+main.about section:nth-child(4) ul li, main.about section:nth-child(5) ul li {
   list-style-type: none;
 
   font-family: "neue-haas-grotesk-display", sans-serif;
@@ -1235,18 +1263,18 @@ main.about section:nth-child(4) ul li {
 
 
 
-main.about section:nth-child(5) {
+main.about section:nth-child(6) {
   position: static;
 
   margin-top: 10em;
   margin-bottom: 2em;
 }
 
-main.about section:nth-child(5) aside {
+main.about section:nth-child(6) aside {
   position: relative;
 }
 
-main.about section:nth-child(5) aside h2 {
+main.about section:nth-child(6) aside h2 {
   font-family: 'enowayregular';
   font-weight: 100;
   font-style: normal;
@@ -1263,7 +1291,7 @@ main.about section:nth-child(5) aside h2 {
   padding-top: 0em;
 }
 
-main.about section:nth-child(5) aside h3 {
+main.about section:nth-child(6) aside h3 {
   position: absolute;
   top: 35%;
 
@@ -1277,18 +1305,18 @@ main.about section:nth-child(5) aside h3 {
   text-transform: uppercase;
 }
 
-main.about section:nth-child(6) {
+main.about section:nth-child(7) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-main.about section:nth-child(6) article {
+main.about section:nth-child(7) article {
   display: flex;
   flex-direction: column;
 }
 
-main.about section:nth-child(6) article h4 {
+main.about section:nth-child(7) article h4 {
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1299,7 +1327,7 @@ main.about section:nth-child(6) article h4 {
   padding-bottom: 1em;
 }
 
-main.about section:nth-child(6) article p {
+main.about section:nth-child(7) article p {
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1309,12 +1337,187 @@ main.about section:nth-child(6) article p {
   color: var(--color-text-dark);
 }
 
-main.about section:nth-child(6) article p:first-of-type {
+main.about section:nth-child(7) article p:first-of-type {
   max-width: 16vw;
   line-height: 1.25em;
 }
 
 
+
+
+/*********************************************************************/
+/*            Media Query  800px - 1100px  Tablet Liggend            */
+/*********************************************************************/
+
+@media screen and (max-width: 1100px) {
+
+  section.about aside h1 {
+    font-size: 10vw;
+    letter-spacing: 0.03em;
+    color: var(--color-text-medium);
+  }
+
+  section.about aside p {
+    max-width: 48.5vw;
+  
+    font-family: 'neue_haas_grotesk_displa25xTh';
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    line-height: 1.6em;
+    font-size: 1.7vw;
+    color: var(--color-text-medium)
+  }
+
+}
+
+
+/**************************************************************************/
+/*                Media Query  ABOUT MOBIEL 380px >> 500px                */
+/**************************************************************************/
+
+@media screen and (max-width: 800px) {
+  section.about video {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 500px) {
+  main.about section.about_mobile {
+    display: none;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+  section.about video {
+    display: none;
+  }
+
+  section.about img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    padding-top: 3em;
+    /* flex-direction: column-reverse; */
+  }
+
+  section.about aside h1 {
+    font-size: 17.2vw;
+    color: var(--color-text-light);
+
+    margin-bottom: 0.3em;
+    position: static;
+  }
+  
+  section.about aside p {
+    max-width: 100%;
+
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vw;
+    line-height: 1.8em;
+    color: var(--color-text-light);
+  }
+
+  main.about section:first-of-type, main.about section:nth-child(3), main.about section:nth-child(5) {
+    margin: 0;
+    margin-top: 4em;
+    padding: 0;
+  }
+
+  main.about section aside {
+    margin: 0;
+    padding: 0;
+  }
+
+  main.about section aside:first-of-type h2 {
+    font-size: 20vw;
+    line-height: 0.8em;
+  }
+
+  main.about section aside:first-of-type h2 br {
+    display: inline;
+  }
+
+  main.about section aside:first-of-type h3 {
+    top: 9%;
+    letter-spacing: 0.06em;
+    line-height: 1.6em;
+    font-size: 5.5vw;
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  main.about section.about_desktop {
+    display: none;
+  }
+
+  main.about section.about_mobile {
+    display: flex;
+    margin-top: -4.2em;
+  }
+
+  /* main.about section.about_mobile ul {
+    margin: ;
+  } */
+
+  main.about section.about_mobile ul li {
+    line-height: 1.4em;
+    font-size: 3.2vw;
+  }
+
+
+  main.about section.about_mobile ul:first-child li:nth-last-child(odd) {
+    /* background-color: hotpink; */
+    padding-bottom: 2em;
+
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  main.about section.about_mobile ul:last-child li:nth-last-child(even) {
+    color: var(--color-sand-background);
+  }
+  main.about section.about_mobile ul:last-child li:nth-last-child(odd) {
+    padding-bottom: 2em;
+  }
+
+
+  /* main.about section:nth-child(4), main.about section:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+  
+    padding-right: 6vw;
+  } */
+
+  /* main.about section:nth-child(4) ul li, main.about section:nth-child(5) ul li {
+    list-style-type: none;
+  
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    line-height: 3.4em;
+    font-size: 1.4vw;
+    color: var(--color-text-dark);
+  } */
+
+
+}
 
 /* Neue Haas Grotesk Display Pro 15 Ultra Thin
 font-family: "neue-haas-grotesk-display", sans-serif;
