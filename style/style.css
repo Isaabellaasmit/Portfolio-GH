@@ -11,7 +11,7 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
 }
 
 body.overflow {
@@ -99,11 +99,11 @@ header nav {
 
 }
 
-header svg.logosvg {
+header aside svg.logosvg, header aside a path.logo {
     width: auto;
     height: 2.5em;
 
-    padding-left: 50%;
+    margin-right: -5vw;
 
     fill: var(--color-logo-blue);
 
@@ -113,7 +113,6 @@ header svg.logosvg {
     left: auto;
     right: auto; */
 }
-
 
 
 
@@ -1671,6 +1670,322 @@ main.about section:nth-child(7) article p:first-of-type {
   }
 
 }
+
+
+
+
+
+/******************************************************************************************************/
+/*                                               CONTACT                                              */
+/******************************************************************************************************/
+
+main.contact {
+  margin: 0;
+  padding: 0;
+}
+
+main.contact>section>section {
+  margin-top: 8em;
+  /* margin-left: 8%; */
+  margin-right: 8%;
+}
+
+main.contact section>section h1 {
+  /* position: absolute;
+  top: 20%; */
+  font-family: 'enowayregular';
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 6vw;
+  letter-spacing: 0.03em;
+  color: var(--color-text-medium);
+}
+
+main.contact section>section span {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+}
+main.contact>section>section section {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+}
+
+main.contact section>section section article {
+  margin: 0;
+  padding: 0;
+  padding-top: 4em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main.contact section>section section article h2 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  font-size: 1.6vw;
+
+  margin-bottom: 0.5em;
+}
+
+main.contact section>section section article p {
+  padding-bottom: 0.2em;
+  max-width: none;
+}
+
+main.contact section>section section article a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  font-size: 0.8em;
+
+  color: var(--color-text-light);
+
+  padding: 0.6em;
+  padding-left: 3em;
+  padding-right: 3em;
+  max-width: 9em;
+  background-color: var(--color-button-blue);
+
+  border-radius: 1.5em;
+}
+
+main.contact section>section aside {
+  margin-top: 6em;
+}
+
+main.contact section>section aside a {
+  margin-right: 0.8em;
+}
+
+main.contact section>section aside a img {
+  width: 2vw;
+  height: auto;
+}
+
+main.contact>section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.contact>section img {
+  width: 45.6vw;
+  height: auto;
+
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+
+}
+
+main.contact>section img.contact_tablets, main.contact>section img.contact_tabletl, main.contact>section img.contact_mobile {
+  display: none;
+}
+
+
+
+
+/*********************************************************************/
+/*            Media Query  800px - 1100px  Tablet Liggend            */
+/*********************************************************************/
+
+@media screen and (max-width: 1100px) {
+
+  main.contact>section img.contact_tabletl {
+    display: flex;
+  }
+
+  main.contact>section img.contact_tablets, main.contact>section img.contact_desktop, main.contact>section img.contact_mobile {
+    display: none;
+  }
+
+  /* section.about aside p {
+    max-width: 48.5vw;
+  
+    font-family: 'neue_haas_grotesk_displa25xTh';
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    line-height: 1.6em;
+    font-size: 1.7vw;
+    color: var(--color-text-medium)
+  } */
+
+}
+
+
+
+/**************************************************************************/
+/*               Media Query  CONTACT  MOBIEL 380px >> 500px               */
+/**************************************************************************/
+
+@media screen and (max-width: 800px) {
+  main.contact>section img.contact_tablets {
+    display: flex;
+
+    position: absolute;
+    top: -20%;
+  }
+
+  main.contact>section img.contact_tabletl, main.contact>section img.contact_desktop, main.contact>section img.contact_mobile {
+    display: none;
+  }
+
+  main.contact>section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  main.contact>section {
+    position: relative;
+  }
+
+  main.contact>section>section {
+    position: relative;
+    margin-right: 8%;
+  }
+
+  main.contact>section img {
+    width: 100vw;
+    height: auto;
+  }
+
+  main.contact section>section h1 {
+    color: var(--color-text-light);
+    font-size: 12.5vw;
+  }
+
+  main.contact section:first-of-type section:first-of-type section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 19em;
+    margin-right: 6vw;
+    margin-left: 6vw;
+  }
+
+  main.contact>section>section section article h2 {
+    font-size: 2.5vw;
+  }
+
+  main.contact>section>section section article p {
+    font-size: 2.5vw;
+  }
+
+  main.contact section>section aside {
+    margin-left: 6vw;
+  }
+
+  main.contact section>section aside a img {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    width: 4vw;
+    height: auto;
+  }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  main.contact>section img.contact_mobile {
+    display: flex;
+
+    position: absolute;
+    top: -13%;
+  }
+
+  main.contact>section img.contact_tabletl, main.contact>section img.contact_desktop, main.contact>section img.contact_tablets {
+    display: none;
+  }
+
+  main.contact section>section h1 {
+    color: var(--color-text-light);
+    font-size: 23vw;
+
+    margin: 0;
+    margin-top: -0.6em;
+    padding: 0;
+    padding-right: 2%;
+
+    text-align: center;
+  }
+
+  main.contact section:first-of-type section:first-of-type section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 4.5em;
+  }
+
+  main.contact>section>section section article {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main.contact>section>section section article h2 {
+    font-size: 4.3vw;
+    margin-top: 2em;
+  }
+
+  main.contact section:first-of-type section:first-of-type section:first-of-type article p {
+    font-size: 4vw;
+    display: block;
+
+    max-width: none;
+  }
+
+  main.contact section>section aside {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 4em;
+  }
+
+  main.contact section>section aside a img {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    width: 7vw;
+    height: auto;
+  }
+}
+
+
+
+
+/* 
+@media screen and (max-width: 800px) {
+
+  section.about video {
+    display: none;
+  }
+} */
+
+
+
+
 
 /* Neue Haas Grotesk Display Pro 15 Ultra Thin
 font-family: "neue-haas-grotesk-display", sans-serif;

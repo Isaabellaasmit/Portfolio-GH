@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 197 182">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #434952;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="29" y="13.55" width="145.12" height="144.79"/>
+    </clipPath>
+  </defs>
+  <g id="Group_407" data-name="Group 407">
+    <g class="cls-2">
+      <g id="Group_406" data-name="Group 406">
+        <path id="Path_778" data-name="Path 778" class="cls-3" d="m31.4,61.62h30.11v96.72h-30.11V61.62Zm15.04-48.07c9.63,0,17.44,7.81,17.44,17.44s-7.81,17.44-17.44,17.44-17.44-7.81-17.44-17.44h0c0-9.63,7.81-17.44,17.44-17.44m33.93,144.79h30.05v-47.84c0-12.61,2.38-24.83,18.04-24.83s15.62,14.42,15.62,25.65v47.03h30.05v-53.07c0-26.05-5.61-46.07-36.05-46.07-11.65-.44-22.59,5.57-28.47,15.62h-.39v-13.2h-28.84v96.72Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
