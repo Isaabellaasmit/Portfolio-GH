@@ -2014,6 +2014,14 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     max-width: none;
   }
 
+  main.contact section>section section article h2 {
+    font-size: 2.3vw;
+  }
+
+  main.contact section>section section article p.p {
+    font-size: 2.3vw;
+  }
+
   /* section.about aside p {
     max-width: 48.5vw;
   
