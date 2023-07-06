@@ -24,6 +24,101 @@ body.classList.toggle("overflow");
 menuButton.addEventListener("click", toggleMenu);
 buttonOverlay.addEventListener("click", toggleMenu);
 
+// window.onload = function() {
+//   new Elevator({
+//       element: document.querySelector('.elevator-button'),
+//       mainAudio: 'music/elevator.mp3',
+//       endAudio: 'music/ding.mp3',
+//       duration: 5000,
+//       startCallback: function() {
+//         // is called, when the elevator starts moving
+//       },
+//       endCallback: function() {
+//         // is called, when the elevator reached target level
+//       }
+//   });
+// }
+
+
+// var elevator = document.querySelector('.elevator');
+var elementButton = document.querySelector('.elevator');
+var elevator = new Elevator({
+    element: elementButton,
+    mainAudio: 'music/elevator.mp3', // Music from http://www.bensound.com/
+    endAudio:  'music/ding.mp3',
+    duration: 5000,
+    startCallback: function() {
+      // is called, when the elevator starts moving
+    },
+    endCallback: function() {
+      // is called, when the elevator reached target level
+    }
+});
+
+
+
+// window.onload = function() {
+//   var elevator = new Elevator({
+//     mainAudio: '/music/elavator.mp3',
+//     endAudio: '/music/ding.mp3'
+//   });
+// }
+
+// // You can run the elevator, by calling.
+// elevator.elevate();
+
+// var elevator = document.querySelector(".elevator");
+
+// window.addEventListener("scroll", () => )
+
+// window.onload = function() {
+//   new Elevator({
+//       element: document.querySelector('.elevator-button'),
+//       mainAudio: './music/elavator.mp3',
+//       endAudio: './music/ding.mp3',
+//       duration: 5000,
+//       startCallback: function() {
+//         // is called, when the elevator starts moving
+//       },
+//       endCallback: function() {
+//         // is called, when the elevator reached target level
+//       }
+//   });
+// }
+
+// var elementButton = document.querySelector('.elevator');
+// var elevator = new Elevator({
+//     element: elementButton,
+//     mainAudio: './music/elevator.mp3', // Music from http://www.bensound.com/
+//     endAudio:  './music/ding.mp3'
+// });
+
+
+
+
+// // commonjs import
+// const Motus = require('motus');
+// // es6 import
+// import Motus from 'motus';
+
+
+// const parallaxAnimation = new Motus.Animation({
+//   $el: document.getElementById('parallax-element'),
+//   keyframes: [
+//       {backgroundPositionY: 50},
+//       {backgroundPositionY: 0}
+//   ],
+// });
+// Motus.addAnimation(parallaxAnimation);
+
+
+
+
+
+
+// $('.my-paroller').paroller();
+// $("#my-element").paroller({ factor: 0.5, factorXs: 0.2, type: 'foreground', direction: 'horizontal' });
+
 
 
 
@@ -87,25 +182,25 @@ console.log("TEST")
 //   // rest of parameters
 // });
 
-const myAtropos = Atropos({
-    el: '.my-atropos',
-    activeOffset: 40,
-    shadowScale: 1.05,
-    onEnter() {
-      console.log('Enter');
-    },
-    onLeave() {
-      console.log('Leave');
-    },
-    onRotate(x, y) {
-      console.log('Rotate', x, y);
-    }
-  });
+// const myAtropos = Atropos({
+//     el: '.my-atropos',
+//     activeOffset: 40,
+//     shadowScale: 1.05,
+//     onEnter() {
+//       console.log('Enter');
+//     },
+//     onLeave() {
+//       console.log('Leave');
+//     },
+//     onRotate(x, y) {
+//       console.log('Rotate', x, y);
+//     }
+//   });
 
-  setTimeout(() => {
-    // destroy it when needed
-    myAtropos.destroy();
-  }, 10000)
+//   setTimeout(() => {
+//     // destroy it when needed
+//     myAtropos.destroy();
+//   }, 10000)
 
 
 

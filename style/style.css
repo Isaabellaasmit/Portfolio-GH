@@ -98,7 +98,7 @@ header nav {
 
 }
 
-header aside svg.logosvg, header aside a path.logo {
+header aside svg.logosvg, header aside a path.logo, header aside a img {
   width: auto;
   height: 2.5em;
 
@@ -2307,11 +2307,25 @@ main.fiberboost {
   padding: 0;
 }
 
-main.fiberboost>img {
+/* main.fiberboost>img:first-of-type, main.fiberboost>img.static {
+  position: static;
+  top: 0;
+}
+
+main.fiberboost>img:last-of-type {
+  position: static;
+  z-index: 20;
+} */
+
+main.fiberboost>img, #luxy img {
   margin: 0;
   padding: 0;
   margin-top: -4px;
   width: 100%;
+
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
 }
 
 main.fiberboost article img {
@@ -2340,7 +2354,17 @@ main.fiberboost article p {
   color: var(--color-text-dark);
 }
 
+div.luxy-el {
+  height: 2em;
+  width: 70%;
+  background-color: #8d7a69;
 
+  margin-bottom: 2em;
+}
+
+div.rellax {
+  color: hotpink;
+}
 /* 
 @media screen and (max-width: 800px) {
 
@@ -2376,6 +2400,35 @@ main.fiberboost article p {
 /****************************************************************/
 /*                             FOOTER                           */
 /****************************************************************/
+
+
+.footer {
+  box-sizing: border-box;
+  padding-top: 190px;
+  height: 300px;
+}
+
+.elevator {
+  text-align: center;
+  cursor: pointer;
+  width: 140px;
+  margin: auto;
+}
+
+.elevator:hover {
+  opacity: 0.7;
+}
+
+.elevator svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+
+
 
 footer {
   display: flex;
