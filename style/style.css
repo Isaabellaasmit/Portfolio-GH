@@ -1920,6 +1920,11 @@ main.contact section>section section article h2 {
 main.contact section>section section article p.p {
   padding-bottom: 0.2em;
   max-width: none;
+  font-family: 'neue_haas_grotesk_displa25xTh';
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  font-size: 1.3em;
 }
 
 main.contact section>section section article a {
