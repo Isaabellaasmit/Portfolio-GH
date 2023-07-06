@@ -2010,6 +2010,10 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     display: none;
   }
 
+  main.contact section>section section article {
+    max-width: none;
+  }
+
   /* section.about aside p {
     max-width: 48.5vw;
   
@@ -2084,8 +2088,8 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     font-size: 2.5vw;
   }
 
-  main.contact>section>section section article p {
-    font-size: 2.5vw;
+  main.contact>section>section section article p.p {
+    font-size: 2.3vw;
   }
 
   main.contact section>section aside {
@@ -2150,7 +2154,7 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     margin-top: 2em;
   }
 
-  main.contact section:first-of-type section:first-of-type section:first-of-type article p {
+  main.contact section:first-of-type section:first-of-type section:first-of-type article p.p {
     font-size: 4vw;
     display: block;
 
