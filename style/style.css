@@ -1917,7 +1917,7 @@ main.contact section>section section article h2 {
   margin-bottom: 0.5em;
 }
 
-main.contact section>section section article p {
+main.contact section>section section article p.p {
   padding-bottom: 0.2em;
   max-width: none;
 }
