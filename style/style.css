@@ -2173,6 +2173,86 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
 
 
 
+/******************************************************************************************************/
+/*                                         WORK RIVEN RUBY                                            */
+/******************************************************************************************************/
+
+
+
+main.riven {
+  margin: 0;
+  padding: 0;
+}
+
+main.riven>img {
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+  width: 100%;
+}
+
+main.riven article img {
+  width: 50vw;
+  height: auto;
+
+  max-width: 60vw;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.riven article p {
+  max-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5em;
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  color: var(--color-text-dark);
+}
+
+main.riven section {
+  margin: 0;
+  padding: 0;
+}
+
+main.riven section aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: -4px;
+}
+
+main.riven section aside img {
+  width: 32vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+ padding-top: 2em;
+ padding-bottom: 2em;
+}
+
+main.riven section aside:first-of-type {
+  background-color: #FFFFFF;
+}
+
+main.riven section aside:nth-child(2) {
+  background-color: #C9AE96;
+}
+
+main.riven section aside:nth-child(3) {
+  background-color: #88987C;
+}
+
 
 /* 
 @media screen and (max-width: 800px) {
@@ -2182,6 +2262,114 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
   }
 } */
 
+@media screen and (max-width: 800px) {
+
+  main.riven article {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  main.riven article img {
+    width: 90vw;
+    height: auto;
+  
+    max-width: 90vw;
+  }
+
+  main.riven article p {  
+    max-width: 80%;
+    font-size: 3.5vw;
+  }
+
+  main.riven section aside img {
+    width: 53vw;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+   padding-top: 2.2em;
+   padding-bottom: 2em;
+  }
+
+}
+
+
+/******************************************************************************************************/
+/*                                         WORK FIBERBOOST                                            */
+/******************************************************************************************************/
+
+
+
+
+
+main.fiberboost {
+  margin: 0;
+  padding: 0;
+}
+
+main.fiberboost>img {
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+  width: 100%;
+}
+
+main.fiberboost article img {
+  width: 30vw;
+  height: auto;
+
+  max-width: 46vw;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.fiberboost article p {
+  max-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  color: var(--color-text-dark);
+}
+
+
+/* 
+@media screen and (max-width: 800px) {
+
+  section.about video {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+
+  main.fiberboost article {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  main.fiberboost article img {
+    width: 90vw;
+    height: auto;
+  
+    max-width: 90vw;
+  }
+
+  main.fiberboost article p {  
+    max-width: 80%;
+    font-size: 3.5vw;
+  }
+
+
+}
 
 
 
@@ -2204,8 +2392,8 @@ footer p {
   font-size: 0.8em;
   text-transform: uppercase;
 
-  padding-top: 5em;
-  padding-bottom: 3em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 
