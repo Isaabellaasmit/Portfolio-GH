@@ -738,10 +738,10 @@ main section:nth-child(4) article {
   align-items: start;
 }
 
-main section:nth-child(4) article section {
-  /* margin-top: auto;
-  margin-bottom: auto; */
-}
+/* main section:nth-child(4) article section {
+  margin-top: auto;
+  margin-bottom: auto;
+} */
 
 main section:nth-child(4) article section h3 {
   width: 70%;
@@ -1194,6 +1194,15 @@ main.work section:first-of-type span {
   font-weight: 200;
 }
 
+
+main.work article.desktop {
+  display: flex;
+}
+
+main.work article.tablet {
+  display: none;
+}
+
 main.work article {
   display: flex;
   justify-content: space-between;
@@ -1261,6 +1270,14 @@ main.work article aside a {
   main.work section:first-of-type h1 {
     top: 30%;
     font-size: 16vw;
+  }
+
+  main.work article.desktop {
+    display: none;
+  }
+
+  main.work article.tablet {
+    display: flex;
   }
 
   main.work article {
