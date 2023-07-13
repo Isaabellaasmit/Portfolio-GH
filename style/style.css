@@ -2241,10 +2241,10 @@ main.riven>img {
 }
 
 main.riven article img {
-  width: 50vw;
+  width: 40vw;
   height: auto;
 
-  max-width: 60vw;
+  max-width: 40vw;
 
   display: flex;
   margin-left: auto;
@@ -2303,13 +2303,34 @@ main.riven section aside:nth-child(3) {
 }
 
 
-/* 
-@media screen and (max-width: 800px) {
 
-  section.about video {
-    display: none;
+/******************************************************************************************************/
+/*                      MEDIA QUERY    RIVEN    TABLET LIGGEND    800PX - 1100PX                      */
+/******************************************************************************************************/
+
+
+
+@media screen and (max-width: 1100px) {
+
+  main.riven article img {
+    width: 45vw;
+    height: auto;
+
+    max-width: none;
   }
-} */
+
+  main.riven article p {  
+    font-size: 2vw;
+  }
+}
+
+
+
+/******************************************************************************************************/
+/*                       MEDIA QUERY    RIVEN    TABLET STAAND    500PX - 800PX                       */
+/******************************************************************************************************/
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -2327,7 +2348,7 @@ main.riven section aside:nth-child(3) {
 
   main.riven article p {  
     max-width: 80%;
-    font-size: 3.5vw;
+    font-size: 1em;
   }
 
   main.riven section aside img {
@@ -2343,11 +2364,17 @@ main.riven section aside:nth-child(3) {
 }
 
 
+
+/******************************************************************************************************/
+/*                               MEDIA QUERY    RIVEN    MOBIEL    <500PX                             */
+/******************************************************************************************************/
+
+
+
+
 /******************************************************************************************************/
 /*                                         WORK FIBERBOOST                                            */
 /******************************************************************************************************/
-
-
 
 
 
@@ -2356,25 +2383,37 @@ main.fiberboost {
   padding: 0;
 }
 
-/* main.fiberboost>img:first-of-type, main.fiberboost>img.static {
-  position: static;
-  top: 0;
-}
-
-main.fiberboost>img:last-of-type {
-  position: static;
-  z-index: 20;
-} */
-
-main.fiberboost>img, #luxy img {
+main.fiberboost>img {
   margin: 0;
   padding: 0;
   margin-top: -4px;
   width: 100%;
+}
 
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
+main.fiberboost article img {
+  width: 50vw;
+  height: auto;
+
+  max-width: 60vw;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.fiberboost article p {
+  max-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5em;
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  color: var(--color-text-dark);
 }
 
 main.fiberboost article img {
@@ -2403,7 +2442,7 @@ main.fiberboost article p {
   color: var(--color-text-dark);
 }
 
-div.luxy-el {
+/* div.luxy-el {
   height: 2em;
   width: 70%;
   background-color: #8d7a69;
@@ -2413,14 +2452,31 @@ div.luxy-el {
 
 div.rellax {
   color: hotpink;
-}
-/* 
-@media screen and (max-width: 800px) {
-
-  section.about video {
-    display: none;
-  }
 } */
+
+
+
+/******************************************************************************************************/
+/*                    MEDIA QUERY    FIBERBOOST    TABLET LIGGEND    800PX - 1100PX                   */
+/******************************************************************************************************/
+
+
+
+@media screen and (max-width: 1100px) {
+
+  main.fiberboost article p {
+    font-size: 2vw;
+  }
+
+}
+
+
+
+/******************************************************************************************************/
+/*                     MEDIA QUERY    FIBERBOOST    TABLET STAAND    500PX - 800PX                    */
+/******************************************************************************************************/
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -2430,7 +2486,7 @@ div.rellax {
   }
 
   main.fiberboost article img {
-    width: 90vw;
+    width: 50vw;
     height: auto;
   
     max-width: 90vw;
@@ -2438,11 +2494,16 @@ div.rellax {
 
   main.fiberboost article p {  
     max-width: 80%;
-    font-size: 3.5vw;
+    font-size: 1em;
   }
 
-
 }
+
+
+
+/******************************************************************************************************/
+/*                             MEDIA QUERY    FIBERBOOST    MOBIEL    <500PX                          */
+/******************************************************************************************************/
 
 
 
@@ -2495,10 +2556,6 @@ main.somo article p {
 main.somo section {
   margin: 0;
   padding: 0;
-
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
 }
 
 main.somo section:first-of-type p {
@@ -2527,7 +2584,7 @@ main.somo section:first-of-type a {
 
 
 /******************************************************************************************************/
-/*                      MEDIA QUERY    ABOUT    TABLET LIGGEND    800PX - 1100PX                      */
+/*                       MEDIA QUERY    SOMO    TABLET LIGGEND    800PX - 1100PX                      */
 /******************************************************************************************************/
 
 
@@ -2548,7 +2605,7 @@ main.somo section:first-of-type a {
 
 
 /******************************************************************************************************/
-/*                       MEDIA QUERY    ABOUT    TABLET STAAND    500PX - 800PX                       */
+/*                        MEDIA QUERY    SOMO    TABLET STAAND    500PX - 800PX                       */
 /******************************************************************************************************/
 
 
@@ -2566,11 +2623,6 @@ main.somo section:first-of-type a {
   
     max-width: 90vw;
   }
-
-  /* main.somo article p {  
-    max-width: 80%;
-    font-size: 3.5vw;
-  } */
 
   main.somo article p, main.somo section:first-of-type p {  
     max-width: 80%;
@@ -2590,17 +2642,24 @@ main.somo section:first-of-type a {
   main.somo section:first-of-type a {
     display: none;
   }
+
 }
 
 
 
 /******************************************************************************************************/
-/*                               MEDIA QUERY    ABOUT    MOBIEL    <500PX                             */
+/*                                MEDIA QUERY    SOMO    MOBIEL    <500PX                             */
 /******************************************************************************************************/
 
 
 
 @media screen and (max-width: 500px) {
+
+  main.somo article img {
+    width: 50vw;
+    height: auto;
+  }
+
   main.somo section:first-of-type a {
     text-decoration: none;
     text-align: center;
@@ -2630,6 +2689,7 @@ main.somo section:first-of-type a {
     background-color: #E84D1F;
     border-radius: 1.5em;
   }
+
 }
 
 
