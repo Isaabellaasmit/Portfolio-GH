@@ -719,6 +719,7 @@ main section:nth-child(4) h2 {
   color: var(--color-text-dark);
 
   margin-bottom: 1.8em;
+  margin-top: 1.3em;
 }
 
 main section:nth-child(4) h2 span {
@@ -733,13 +734,13 @@ main section:nth-child(4) h2 span {
 
 main section:nth-child(4) article {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
 }
 
 main section:nth-child(4) article section {
-  margin-top: auto;
-  margin-bottom: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
 }
 
 main section:nth-child(4) article section h3 {
@@ -792,11 +793,23 @@ main section:nth-child(4) article section a {
 }
 
 main section:nth-child(4) article section p {
-  font-size: 2.4vw;
+  /* font-size: 2.4vw; */
+
+  margin-right: 3em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+
+  font-family: 'neue_haas_grotesk_displa25xTh';
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  font-size: 1em;
+
+  max-width: 30vw;
 }
 
 main section:nth-child(4) article img {
-  width: 30vw;
+  width: 18vw;
   height: auto;
 }
 
@@ -1069,18 +1082,17 @@ main section:nth-child(4) article img {
   }
 
   main section:nth-child(4) article img {
-    width: 50vw;
+    /* width: 50vw;
     height: auto;
 
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* margin-top: 3em; */
     margin-top: -1.8em;
     position: absolute;
     left: 25%;
     z-index: -1;
 
-    opacity: 0.3;
+    opacity: 0.3; */
+
+    display: none;
   }
 
 }
