@@ -2416,6 +2416,134 @@ div.rellax {
 
 
 
+
+
+/******************************************************************************************************/
+/*                                            WORK    SOMO                                            */
+/******************************************************************************************************/
+
+
+
+main.somo {
+  margin: 0;
+  padding: 0;
+}
+
+main.somo>img {
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+  width: 100%;
+}
+
+main.somo article img {
+    width: 20vw;
+    height: auto;
+
+    max-width: 20vw;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    padding-top: 2.5em;
+}
+
+main.somo article p {
+  max-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5em;
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  color: var(--color-text-dark);
+}
+
+main.somo section {
+  margin: 0;
+  padding: 0;
+}
+
+main.somo section aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: -4px;
+}
+
+main.somo section aside img {
+  width: 32vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+ padding-top: 2em;
+ padding-bottom: 2em;
+}
+
+main.somo section aside:first-of-type {
+  background-color: #FFFFFF;
+}
+
+main.somo section aside:nth-child(2) {
+  background-color: #C9AE96;
+}
+
+main.somo section aside:nth-child(3) {
+  background-color: #88987C;
+}
+
+
+/* 
+@media screen and (max-width: 800px) {
+
+  section.about video {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+
+  main.somo article {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  main.somo article img {
+    width: 90vw;
+    height: auto;
+  
+    max-width: 90vw;
+  }
+
+  main.somo article p {  
+    max-width: 80%;
+    font-size: 3.5vw;
+  }
+
+  main.somo section aside img {
+    width: 53vw;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+   padding-top: 2.2em;
+   padding-bottom: 2em;
+  }
+
+}
+
+
+
+
+
 /****************************************************************/
 /*                             FOOTER                           */
 /****************************************************************/
