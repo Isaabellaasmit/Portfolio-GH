@@ -1268,7 +1268,7 @@ main.work article aside a {
 @media screen and (max-width: 1100px) {
 
   main.work section:first-of-type h1 {
-    top: 30%;
+    top: 34%;
     font-size: 16vw;
   }
 
