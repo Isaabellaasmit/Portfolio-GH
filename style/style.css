@@ -958,7 +958,7 @@ main section:nth-child(4) article img {
     height: auto;
     left: 0;
     
-    margin-top: -11.5em;
+    margin-top: -11em;
 
   }
 
@@ -982,7 +982,7 @@ main section:nth-child(4) article img {
     width: 100%;
     max-width: none;
 
-    margin-top: 3em;
+    margin-top: 1.8em;
   }
 
   main section.first article h1:first-of-type {
@@ -999,7 +999,7 @@ main section:nth-child(4) article img {
 
   main section.first article aside {
     position: absolute;
-    margin-top: 150%;
+    margin-top: 135%;
     margin-left: 0;
     margin-right: 0;
     align-content: center;
