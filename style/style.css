@@ -2014,20 +2014,9 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
 }
 
 
-/******************************************************************************************************/
-/*                               MEDIA QUERY    ABOUT    MOBIEL    <500PX                             */
-/******************************************************************************************************/
-
-
 
 /******************************************************************************************************/
-/*                       MEDIA QUERY    ABOUT    TABLET STAAND    500PX - 800PX                       */
-/******************************************************************************************************/
-
-
-
-/******************************************************************************************************/
-/*                      MEDIA QUERY    ABOUT    TABLET LIGGEND    800PX - 1100PX                      */
+/*                     MEDIA QUERY    CONTACT    TABLET LIGGEND    800PX - 1100PX                     */
 /******************************************************************************************************/
 
 
@@ -2070,9 +2059,11 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
 
 
 
-/**************************************************************************/
-/*               Media Query  CONTACT  MOBIEL 380px >> 500px               */
-/**************************************************************************/
+/******************************************************************************************************/
+/*                      MEDIA QUERY    CONTACT    TABLET STAAND    500PX - 800PX                      */
+/******************************************************************************************************/
+
+
 
 @media screen and (max-width: 800px) {
   main.contact>section img.contact_tablets {
@@ -2100,7 +2091,8 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
 
   main.contact>section>section {
     position: relative;
-    margin-right: 8%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   main.contact>section img {
@@ -2111,7 +2103,7 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
   main.contact section>section h1 {
     color: var(--color-text-light);
     font-size: 12.5vw;
-    margin-left: 8%;
+    /* margin-left: 8%; */
   }
 
   main.contact section:first-of-type section:first-of-type section {
@@ -2148,6 +2140,12 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
 
 
 
+/******************************************************************************************************/
+/*                              MEDIA QUERY    CONTACT    MOBIEL    <500PX                            */
+/******************************************************************************************************/
+
+
+
 @media screen and (max-width: 500px) {
   main.contact>section img.contact_mobile {
     display: flex;
@@ -2167,7 +2165,6 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     margin: 0;
     margin-top: -0.6em;
     padding: 0;
-    padding-right: 2%;
 
     text-align: center;
   }
@@ -2218,6 +2215,7 @@ main.contact>section img.contact_tablets, main.contact>section img.contact_table
     width: 7vw;
     height: auto;
   }
+
 }
 
 
