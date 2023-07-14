@@ -1294,6 +1294,7 @@ main.work article aside a {
   main.work article img.header_tablet {
     min-width: 100%;
     display: block;
+    height: auto;
   }
 
   main.work article aside {
@@ -1355,6 +1356,7 @@ main.work article aside a {
   main.work section:first-of-type img.headerbeeld_mobile {
     display: block;
     max-width: 100%;
+    height: auto;
   }
 
 }
